@@ -51,13 +51,13 @@ for filename in sys.argv[1:]:
             file_index += 1
             print('{} => {}'.format(sourceurl_full, newfile))
             try:
-                os.mkdir('./images/' + date_prefix)
+                os.mkdir('./images/blogger/' + date_prefix)
             except:
                 # Don't care.
                 pass
             
-            urllib.FancyURLopener().retrieve(sourceurl_full, './images/' + date_prefix + '/' + newfile)
-            contents = contents.replace(sourceurl, '{{ site.url }}/images/' + date_prefix + '/' + newfile)
+            urllib.FancyURLopener().retrieve(sourceurl_full, './images/blogger/' + date_prefix + '/' + newfile)
+            contents = contents.replace(sourceurl, '{{ site.url }}/images/blogger/' + date_prefix + '/' + newfile)
 
     with open(filename, 'w') as f:
         f.write(contents)
