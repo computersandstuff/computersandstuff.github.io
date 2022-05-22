@@ -45,8 +45,10 @@ for filename in sys.argv[1:]:
     	        size_end = sourceurl.rfind('/')
                 imagename = sourceurl[size_end + 1:]
                 sourceurl_full = sourceurl
-
-            newfile = date_prefix + '-' + imagename
+            if len(imagename) > 30:
+              newfile = date_prefix + '-' + imagename[0:30]
+            else:
+              newfile = date_prefix + '-' + imagename
 
             file_index += 1
             print('{} => {}'.format(sourceurl_full, newfile))
