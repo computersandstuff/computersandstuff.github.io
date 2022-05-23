@@ -12,7 +12,7 @@ This is the site corresponding to my YouTube channel which you can find [here](h
 
 Hopefully I will update this site soon. I just moved from blogger to this (Jekyll with github pages) which is new to me, but I'm getting the hang of it! If you want to see the source code for the site check out the [github repo.](https://www.github.com/computersandstuff/computersandstuff.github.io)
 
-#### Here's the old badly formatted about page from my blogger site which I will replace soon with a shiny, new, informal page.
+#### Here's the old badly written about page from my blogger site which I will replace soon with a shiny, new, informal page.
 
 I have liked to work with computers, av equipment, cameras, and all sorts of technology since I was little. I have a YouTube channel where I post about different electronics and projects.
 
