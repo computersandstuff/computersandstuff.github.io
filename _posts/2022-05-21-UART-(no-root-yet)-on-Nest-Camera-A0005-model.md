@@ -127,7 +127,7 @@ CPU: Ambarella A5s66-CO-RH
 
   
 
-[![]({{ site.url }}/images/blogger/2022-05-21/2022-05-21-20220515_154029.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2c2LjOojgl-_9MmzVJRlWIamy_TlpZd8K_DzNQCJG9Kx2GNxVLqaiyicjGMlHbv_sS32EIpuge2BF8m8yj_eknEgiarGTxfvPcTwLWvJbf9QMZwTGMoHoVd7UicWLn4TxqLoJcBK_a0hrK6gGQWfIdAu7gyYHfetOIJJGt6Xxr-tILXHAmjLHg2wN-Q/s4032/20220515_154029.jpg)
+![]({{ site.url }}/images/blogger/2022-05-21/2022-05-21-20220515_154029.jpg)
 
 Ram: CHIPSIP CT49248DD486C1
 
@@ -178,7 +178,7 @@ Dropcam rooting for defcon: [https://www.slideshare.net/cisoplatform7/defcon-22
 
 ```console
 =~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2022.05.20 18:28:20 =~=~=~=~=~=~=~=~=~=~=~=
-[4l
+
 [    0.000000] Linux version 2.6.38.8 (jenkins@dropcam-build.local) (gcc version 4.5.2 (Sourcery G++ Lite 2011.03-41) ) #81 PREEMPT Tue Apr 2 18:49:38 UTC 2019
 [    0.000000] CPU: ARMv6-compatible processor [4117b365] revision 5 (ARMv6TEJ), cr=00c5387f
 [    0.000000] CPU: VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
