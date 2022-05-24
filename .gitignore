@@ -5,3 +5,11 @@ _site
 *.bak
 migrate.rb
 vendor
+.*
+!.git*
+!.editorconfig
+!.nojekyll
+!.travis.yml
+*.gem
+node_modules
+package-lock.json
