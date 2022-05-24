@@ -4,11 +4,12 @@ title: How to fix D-LINK DIR615 (E1) Firmware (solid orange light)
 date: 2020-05-13 20:00:15 UTC
 updated: 2020-05-13 20:00:15 UTC
 comments: false
-categories: 
+categories: embedded howto
+tags: unbricking router
 ---
 The D-Link DIR615 Firmware problem is common when the firmware is corrupted or the router was powered off during a firmware update.
 
-[![]({{ site.url }}/images/blogger/2020-05-13/2020-05-13-image1.jpg)](https://1.bp.blogspot.com/-YBtjNCheemY/XrxRu55dNZI/AAAAAAAAAJ0/caVMJ1vqpVQZqq59tM9mmqZy2VpSrHpFwCLcBGAsYHQ/s1600/image1.jpg)
+![D-Link DIR615]({{ site.url }}/images/blogger/2020-05-13/2020-05-13-image1.jpg)
 
   
   
