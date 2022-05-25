@@ -421,26 +421,4 @@ Populating dropcam using udev: Done
 [    8.621913] mmc1: queuing unknown CIS tuple 0x1b (8 bytes)
 [    8.643483] mmc1: queuing unknown CIS tuple 0x14 (0 bytes)
 [    8.671185] mmc1:attach sdio array 1 
-
-Regdomain US
-[    8.705683] mmc1: queuing unknown CIS tuple 0x80 (1 bytes)
-[    8.723757] mmc1: queuing unknown CIS tuple 0x81 (1 bytes)
-[    8.737312] mmc1: queuing unknown CIS tuple 0x82 (1 bytes)
-[    8.748077] mmc1: new high speed SDIO card at address 0001
-[    8.958183] MAC from EEPROM 00:03:7F:05:81:91
-[    8.992011] Soft MAC 64:16:66:7B:25:04
-[    9.027512] ath6kl: temporary war to avoid sdio crc error
-[    9.542472] ath6kl: ar6003 hw 2.1.1 sdio fw 3.4.0.225.SMARTPHONE api 4
-[    9.553459] ath6kl: Current ath6kl driver version is: 3.4.0.225
-[    9.789738] cfg80211: Calling CRDA for country: US
-[    9.804106] cfg80211: Regulatory domain changed to country: US
-[    9.823179] cfg80211:     (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
-[    9.852696] cfg80211:     (2402000 KHz - 2472000 KHz @ 40000 KHz), (300 mBi, 2700 mBm)
-[    9.874153] cfg80211:     (5170000 KHz - 5250000 KHz @ 40000 KHz), (300 mBi, 1700 mBm)
-Initializing random number generator... [    9.892938] cfg80211:     (5250000 KHz - 5330000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
-[    9.922885] cfg80211:     (5490000 KHz - 5600000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
-[    9.931030] cfg80211:     (5650000 KHz - 5710000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
-[    9.962920] cfg80211:     (5735000 KHz - 5835000 KHz @ 40000 KHz), (300 mBi, 3000 mBm)
-done.
-Starting system message bus: done
 ```
