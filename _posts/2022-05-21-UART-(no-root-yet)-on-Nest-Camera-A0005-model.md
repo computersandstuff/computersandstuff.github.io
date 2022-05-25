@@ -281,5 +281,86 @@ Dropcam rooting for defcon: [https://www.slideshare.net/cisoplatform7/defcon-22
 [    3.203327] 0x000004620000-0x000004920000 : "dsp"
 [    3.212699] 0x000004920000-0x000007420000 : "lnx"
 [    3.222139] 0x000007420000-0x000007c20000 : "adc"
-
+[    3.233754] UBI: attaching mtd6 to ubi0
+[    3.238081] UBI: physical eraseblock size:   131072 bytes (128 KiB)
+[    3.244594] UBI: logical eraseblock size:    126976 bytes
+[    3.250407] UBI: smallest flash I/O unit:    2048
+[    3.255299] UBI: VID header offset:          2048 (aligned 2048)
+[    3.261736] UBI: data offset:                4096
+[    3.469342] UBI: max. sequence number:       41883
+[    3.485481] UBI: attached mtd6 to ubi0
+[    3.489536] UBI: MTD device name:            "bak"
+[    3.494525] UBI: MTD device size:            43 MiB
+[    3.499718] UBI: number of good PEBs:        344
+[    3.504532] UBI: number of bad PEBs:         0
+[    3.509225] UBI: number of corrupted PEBs:   0
+[    3.513841] UBI: max. allowed volumes:       128
+[    3.518708] UBI: wear-leveling threshold:    4096
+[    3.523607] UBI: number of internal volumes: 1
+[    3.528275] UBI: number of user volumes:     1
+[    3.532889] UBI: available PEBs:             0
+[    3.537577] UBI: total number of reserved PEBs: 344
+[    3.542649] UBI: number of PEBs reserved for bad PEB handling: 3
+[    3.548941] UBI: max/mean erase counter: 417/125
+[    3.553750] UBI: image sequence number:  1815888556
+[    3.558909] UBI: background thread "ubi_bgt0d" started, PID 671
+[    3.565305] console [netcon0] enabled
+[    3.569199] netconsole: network logging started
+[    3.575511] mousedev: PS/2 mouse device common for all mice
+[    3.584917] using rtc device, ambarella-rtc, for alarms
+[    3.590525] ambarella-rtc ambarella-rtc: rtc core: registered ambarella-rtc as rtc0
+[    3.601062] ambarella-wdt ambarella-wdt: Ambarella Media Processor Watch Dog Timer[ambarella-wdt].
+[    3.614741] lp5521 0-0035: lp5521 programmable led chip found
+[    3.632729] ambarella-i2c ambarella-i2c.0: ambarella_i2c_stop[1] from 7 to 9
+[    3.640175] ambarella-i2c ambarella-i2c.0: ambarella_i2c_irq in wrong state[0x9]
+[    3.647874] ambarella-i2c ambarella-i2c.0: status_reg[0x40]
+[    3.653667] ambarella-i2c ambarella-i2c.0: control_reg[0x3]
+[    4.627506] ambarella-i2c ambarella-i2c.0: No ACK from address 0x66, 0:1!
+[    4.634589] ambarella-i2c ambarella-i2c.0: I2C state 0x9, please check address 0x66!
+[    4.663639] lp5523 0-0033: LP5523 Programmable led chip found
+[    4.673821] LP5523 status:
+[    4.677114] 	LP5523_REG_ENABLE: 0x6a
+[    4.681406] 	LP5523_REG_CONFIG: 0x7e
+[    4.685597] 	LP5523_REG_OP_MODE: 0x0
+[    4.689883] 	LP5523_REG_ENABLE_LEDS_MSB: 0x0
+[    4.694794] 	LP5523_REG_ENABLE_LEDS_LSB: 0x0
+[    4.719716] ALSA device list:
+[    4.722829]   No soundcards found.
+[    4.726363] oprofile: hardware counters not available
+[    4.731954] oprofile: using timer interrupt.
+[    4.736686] TCP cubic registered
+[    4.740237] NET: Registered protocol family 17
+[    4.745009] Registering the dns_resolver key type
+[    4.754221] =====RTC ever lost power=====
+[    4.770835] ambarella-rtc ambarella-rtc: setting system clock to 2004-01-10 13:37:04 UTC (1073741824)
+[    4.782152] UBIFS: parse sync
+[    4.815963] UBIFS: recovery needed
+[    4.943046] UBIFS: recovery completed
+[    4.947093] UBIFS: mounted UBI device 0, volume 0, name "rootfs"
+[    4.953572] UBIFS: file system size:   41394176 bytes (40424 KiB, 39 MiB, 326 LEBs)
+[    4.961652] UBIFS: journal size:       9023488 bytes (8812 KiB, 8 MiB, 72 LEBs)
+[    4.969324] UBIFS: media format:       w4/r0 (latest is w4/r0)
+[    4.975389] UBIFS: default compressor: lzo
+[    4.979704] UBIFS: reserved for root:  0 bytes (0 KiB)
+[    4.986014] VFS: Mounted root (ubifs filesystem) on device 0:13.
+[    4.992559] Freeing init memory: 136K
+[    5.753465] UBI: attaching mtd9 to ubi1
+[    5.757594] UBI: physical eraseblock size:   131072 bytes (128 KiB)
+[    5.764115] UBI: logical eraseblock size:    126976 bytes
+[    5.769801] UBI: smallest flash I/O unit:    2048
+[    5.774700] UBI: VID header offset:          2048 (aligned 2048)
+[    5.781008] UBI: data offset:                4096
+[    5.824686] UBI: max. sequence number:       7859
+[    5.840109] UBI: attached mtd9 to ubi1
+[    5.844024] UBI: MTD device name:            "adc"
+[    5.849138] UBI: MTD device size:            8 MiB
+[    5.854128] UBI: number of good PEBs:        64
+[    5.858956] UBI: number of bad PEBs:         0
+[    5.863591] UBI: number of corrupted PEBs:   0
+[    5.868296] UBI: max. allowed volumes:       128
+[    5.873108] UBI: wear-leveling threshold:    4096
+[    5.878066] UBI: number of internal volumes: 1
+[    5.882691] UBI: number of user volumes:     1
+[    5.887298] UBI: available PEBs:             0
+[    5.891975] UBI: total number of reserved PEBs: 64
 ```
