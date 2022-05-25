@@ -421,4 +421,114 @@ Populating dropcam using udev: Done
 [    8.621913] mmc1: queuing unknown CIS tuple 0x1b (8 bytes)
 [    8.643483] mmc1: queuing unknown CIS tuple 0x14 (0 bytes)
 [    8.671185] mmc1:attach sdio array 1 
+
+Regdomain US
+[    8.705683] mmc1: queuing unknown CIS tuple 0x80 (1 bytes)
+[    8.723757] mmc1: queuing unknown CIS tuple 0x81 (1 bytes)
+[    8.737312] mmc1: queuing unknown CIS tuple 0x82 (1 bytes)
+[    8.748077] mmc1: new high speed SDIO card at address 0001
+[    8.958183] MAC from EEPROM 00:03:7F:05:81:91
+[    8.992011] Soft MAC 64:16:66:7B:25:04
+[    9.027512] ath6kl: temporary war to avoid sdio crc error
+[    9.542472] ath6kl: ar6003 hw 2.1.1 sdio fw 3.4.0.225.SMARTPHONE api 4
+[    9.553459] ath6kl: Current ath6kl driver version is: 3.4.0.225
+[    9.789738] cfg80211: Calling CRDA for country: US
+[    9.804106] cfg80211: Regulatory domain changed to country: US
+[    9.823179] cfg80211:     (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+[    9.852696] cfg80211:     (2402000 KHz - 2472000 KHz @ 40000 KHz), (300 mBi, 2700 mBm)
+[    9.874153] cfg80211:     (5170000 KHz - 5250000 KHz @ 40000 KHz), (300 mBi, 1700 mBm)
+Initializing random number generator... [    9.892938] cfg80211:     (5250000 KHz - 5330000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
+[    9.922885] cfg80211:     (5490000 KHz - 5600000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
+[    9.931030] cfg80211:     (5650000 KHz - 5710000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
+[    9.962920] cfg80211:     (5735000 KHz - 5835000 KHz @ 40000 KHz), (300 mBi, 3000 mBm)
+done.
+Starting system message bus: done
+
+
+            .:^:.
+
+        .o0WMMMMMNOc.               lk,
+
+       dWMMMMNXNMMMMWl             .NMc
+
+      dMMMMd.   .kMMMMl     .oOXNX0kWMc cX0xXNo .oOXNX0d'  .0XxxKNNKx;     :kKNNKx. .lOXNNKx,   :XXxKNXOldKNNKd.
+
+      KMMMO       KMMM0    lWNd;',lXMMc oMMo'..dWNo,',oXWx .WMWk;',c0M0. .KMO:'':; ;NWx;',cKMK. lMMx'.oWMX;.'0MO
+
+      OMMMW;     cWMMMx   .MM:     .WMc oMX   'MM,     'WM;.WMd      XMo kM0       KMx     .WMd lMM'  .XMo   cMX
+
+      .0MMMM0..cKMMMMk     0M0'   .dMMc oMX   .XMk'   .xMX..WMK;   .lWW, cWW:      dMX,   .oMMd lMM'  .XMo   cMX
+
+        :XM0:dNMMMMO;       oNMNKXMNWMc oMX    .dNMNKXMNx. .WMWMNKXMWO'   ;0WWKKWN, cKMNKXWWWMd lMM'  .XMo   cMK
+
+          ;.0MMMMO,           .;:;. ';. .;.       .;:;.    .WMo.,:;'.       .,::,.    .;:;'..;. .;;    ,;.   .;.
+
+            'ONx'                                          .WM:
+
+                                                            ..
+
+NestCam login: kernel.panic_on_oops = 1
+wpa_supplicant v2.0-Nest_2017a
+Successfully initialized wpa_supplicant
+rfkill: Cannot open RFKILL control device
+rm: can't remove '/usr/bin/connect_unverified': [   11.511521] ambarella-wdt ambarella-wdt: Not stopping watchdog, V first!
+No such file or directory
+Firmware version is: 223
+Connect version is: 610050
+[   15.474871] ambarella_udc: version 2 August 2011
+[   15.533620] g_mass_storage gadget: Mass Storage Function, version: 2009/09/11
+[   15.540952] g_mass_storage gadget: Number of LUNs=1
+[   15.547959]  lun0: LUN: removable file: /tmp/setup.img
+[   15.554535] g_mass_storage gadget: Nest Cam Setup, version: 2015/02/12
+[   15.561265] g_mass_storage gadget: userspace failed to provide iSerialNumber
+[   15.570468] g_mass_storage gadget: g_mass_storage ready
+[   16.066926] Bluetooth: Core ver 2.18
+[   16.083543] NET: Registered protocol family 31
+[   16.088111] Bluetooth: HCI device and connection manager initialized
+[   16.096657] Bluetooth: HCI socket layer initialized
+[   16.101709] Bluetooth: L2CAP socket layer initialized
+[   16.108960] Bluetooth: SCO socket layer initialized
+[   16.232427] vout: module license 'Proprietary' taints kernel.
+[   16.239597] Disabling lock debugging due to kernel taint
+[   16.287782] Vout notice: vout0:0 probed!
+[   16.294933] Vout notice: vout1:1 probed!
+[   16.355136] Vin info: amba_vin_vsync_bind to idsp with 0ns delay!
+[   16.361494] Vin notice: vin0:0 probed!
+[   16.507346] img: aaa_fifo2_base malloc c7680000
+[   16.932314] >>>>>> DSP LOG ADDR START PHY 0xc0080000 
+[   17.503480] MT9T002 sensor ID is 0x2604
+[   17.508678] Vin info: OTPM version:5
+[   18.543665] UBI: attaching mtd8 to ubi2
+[   18.547654] UBI: physical eraseblock size:   131072 bytes (128 KiB)
+[   18.556099] UBI: logical eraseblock size:    126976 bytes
+[   18.561689] UBI: smallest flash I/O unit:    2048
+[   18.568512] UBI: VID header offset:          2048 (aligned 2048)
+[   18.575902] UBI: data offset:                4096
+[   18.778436] UBI: max. sequence number:       7782
+[   18.800708] UBI: attached mtd8 to ubi2
+[   18.815315] UBI: MTD device name:            "lnx"
+[   18.820425] UBI: MTD device size:            43 MiB
+[   18.828019] UBI: number of good PEBs:        344
+[   18.834647] UBI: number of bad PEBs:         0
+[   18.839301] UBI: number of corrupted PEBs:   0
+[   18.846277] UBI: max. allowed volumes:       128
+[   18.851651] UBI: wear-leveling threshold:    4096
+[   18.858783] UBI: number of internal volumes: 1
+[   18.867191] UBI: number of user volumes:     2
+[   18.875434] UBI: available PEBs:             0
+[   18.880006] UBI: total number of reserved PEBs: 344
+[   18.887914] UBI: number of PEBs reserved for bad PEB handling: 3
+[   18.895318] UBI: max/mean erase counter: 25/24
+[   18.899921] UBI: image sequence number:  2129170518
+[   18.906952] UBI: background thread "ubi_bgt2d" started, PID 944
+[   18.994002] UBIFS: recovery needed
+[   19.020069] UBIFS: recovery completed
+[   19.026129] UBIFS: mounted UBI device 2, volume 1, name "backup"
+[   19.032341] UBIFS: file system size:   4825088 bytes (4712 KiB, 4 MiB, 38 LEBs)
+[   19.041848] UBIFS: journal size:       1015809 bytes (992 KiB, 0 MiB, 6 LEBs)
+[   19.050394] UBIFS: media format:       w4/r0 (latest is w4/r0)
+[   19.057583] UBIFS: default compressor: lzo
+[   19.061836] UBIFS: reserved for root:  227900 bytes (222 KiB)
+[   22.310860] Bluetooth: HCI UART driver ver 2.2
+[   22.316688] Bluetooth: HCIATH3K protocol initialized
 ```
