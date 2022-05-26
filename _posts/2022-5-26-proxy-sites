@@ -1,0 +1,28 @@
+---           
+title: Web Proxy to Bypass Blocked Sites in School or Work (How to get fired)
+date: 2022-05-26 15:42:15 UTC
+updated: 2022-05-26 15:42:15 UTC
+comments: false
+categories: selfhosted howto
+tags: docker
+---
+
+So you have a blocked site at work or school? 
+It might not even be a *bad* site, maybe even a mistake! [Thanks to Palo Alto] (https://news.ycombinator.com/item?id=27593565) one of my own was blocked for "adult content", none of which there was.
+Now I have to block all their bots from my firewall.
+
+But how do we browse our Insta on our work laptops or school chromebooks?
+
+# Solution 1: Proxy sites
+
+There are various proxy websites online, but most will be blocked by a firewall if any other sites are blocked.
+
+[Browserling](https://www.browserling.com/)
+[BrowserStack](https://www.browserstack.com/)
+[Glype](http://www.jcbl.be/)
+[Lowband](http://www.loband.org/loband/simulator.jsp) (This is a dial up simulator, but it hasn't been blocked for me!)
+
+# Hosting an Http Proxy Site
+
+##Using PHP-Proxy
+More soon
