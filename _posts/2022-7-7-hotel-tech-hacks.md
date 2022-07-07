@@ -1,5 +1,5 @@
 ---           
-title: The Brain of A Hotel - ~~Hacking~~ *Inspecting* the Tech Inside Hotels
+title: The Brain of A Hotel - Hac... or Inspecting the Tech Inside Hotels
 date: 2022-07-07 21:36:31 UTC
 updated: 2022-07-07 21:36:31 UTC
 comments: false
@@ -51,28 +51,28 @@ I checked the DHCP server and sure enough it was running a webserver (lighttpd 1
 From the status page there wasn't much and fortunately the default password of these Cisco firewalls is the serial number.
 This means it was *probably* safe.
 
-![](../assets/2022-7-7-hotel-tech-hacks/images/CiscoScreenshot1.png)
+![](../../assets/2022-7-7-hotel-tech-hacks/images/CiscoScreenshot1.png)
 *Firewall Information*
 
-![](../assets/2022-7-7-hotel-tech-hacks/images/CiscoScreenshot2.png)
+![](../../assets/2022-7-7-hotel-tech-hacks/images/CiscoScreenshot2.png)
 *Landing Page of Cisco Security Appliance*
 
 
 There were many subnets in which I did not have time to scan them all. I picked a few interesting ones.
 The WebOS TVs on the network had an exposed NodeJS webserver most likely for remote management and communication. I got a 404 when accessing them and I could not find anything else on it. If I had more time I could probably shut off everyone's TVs or something.
 
-![](../assets/2022-7-7-hotel-tech-hacks/images/WebOSNodejs.png)
+![](../../assets/2022-7-7-hotel-tech-hacks/images/WebOSNodejs.png)
 *Portscan of a WebOS TV*
 
 This is probably one of the most interesting devices I found.
 When I looked through the scan results I found this:
 
-![](../assets/2022-7-7-hotel-tech-hacks/images/COM3000Scan.png)
+![](../../assets/2022-7-7-hotel-tech-hacks/images/COM3000Scan.png)
 
 After going to the webpage I discovered that the device was a Technicolor DIRECTV COM3000. 
 This is an IPTV headend system. Having worked with TVHeadend on my homelab I was a bit familiar with headends and IPTV, but this was much more advanced.
 
-![](../assets/2022-7-7-hotel-tech-hacks/images/COM3000.png)
+![](../../assets/2022-7-7-hotel-tech-hacks/images/COM3000.png)
 *The technicolor COM3000 (Also displayed as COM400)*
 [Image Source](https://pdihospitality.com/products/directvs-hd-com-system)
 
@@ -81,10 +81,10 @@ These devices use COM51 (as seen in the portscan) blade cards to connect to what
 There were multiple results for these "COM51" webpages in the portscan which I'm assuming is a separate webserver for every card rather than multiple rackmount units.
 One of the web UIs did not have a password set.
 
-![](../assets/2022-7-7-hotel-tech-hacks/images/COM3000Screenshot1.png)
+![](../../assets/2022-7-7-hotel-tech-hacks/images/COM3000Screenshot1.png)
 *Information page for COM3000*
 
-![](../assets/2022-7-7-hotel-tech-hacks/images/COM3000Screenshot2.png)
+![](../../assets/2022-7-7-hotel-tech-hacks/images/COM3000Screenshot2.png)
 *Channel List*
 
 Yes, this meant I could mess around with every setting. Switch people from watching CNN to Fox News and vice versa. But as I said I was just here to spectate and find what technology was being used. Also most of the settings were beyond my knowledge of cable/satellite technology and were probably meant for DIRECTV technicians. 
