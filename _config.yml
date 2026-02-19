@@ -187,6 +187,9 @@ exclude:
   - gulpfile.js
   - node_modules
   - package*.json
+  - vendor
+  - assets/img/favicons/browserconfig.xml
+  - assets/img/favicons/site.webmanifest
 
 jekyll-archives:
   enabled: [categories, tags]
