@@ -15,7 +15,7 @@ It has been a while since my last post. Life happens, school and work are busy, 
 * [Cisco Netacad](https://www.netacad.com/) (Free)
 	* [Network Technician Course](https://www.netacad.com/career-paths/network-technician)
 	* [Introduction To Cybersecurity](https://www.netacad.com/courses/introduction-to-cybersecurity)
-	* Includes usage of [Packet Tracer](netacad.com/courses/getting-started-cisco-packet-tracer) (Free)
+	* Includes usage of [Packet Tracer](https://netacad.com/courses/getting-started-cisco-packet-tracer) (Free)
 * [Comptia Certmaster Platform](https://www.comptia.org/en-us/resources/certmaster-training/) (\$\$\$)
 
 ### Tools
