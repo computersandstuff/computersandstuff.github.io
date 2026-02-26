@@ -7,31 +7,31 @@ comments: false
 categories: homelab
 tags: homelab network selfhosting
 ---
-I wanted to post this article after my hiatus as it has been in the works for some time now. The purpose of this post is to discuss the current state of my homelab and home network, as well as the progress I have made over the years. Maybe this will help inspire some of y’all to build or update your own networks, or possibly just serve as an enjoyable read for others.
+I wanted to post this article after my hiatus, as it has been in the works for some time now. The purpose of this post is to discuss the current state of my homelab and home network, as well as the progress I have made over the years. Maybe this will help inspire some of y’all to build or update your own networks, or possibly just serve as an enjoyable read for others.
 
 # The Server
 
-Likely the most important thing in a homelab is the server(s) itself. Mine have gone through a variety of changes over the years, so let's see where it all started.
+Likely the most important thing in a homelab is the server(s) themselves. Mine have gone through a variety of changes over the years, so let's see where it all started.
 
 ## History
 
-I have always had an interest in computers, and over time, I fell into the world of networking. It started with connecting a couple of computers with an Ethernet cable and playing around with static IPs and file shares. It wasn't long before I started playing around with an old Lenovo ThinkCentre, and before I knew it, I had a homelab. I primarily  used the ThinkCentre for attempted remote video rendering for my channel, so I found another PC for the homelab. An old Dell Dimension E521:
+I have always had an interest in computers, and over time, I fell into the world of networking. It started with connecting a couple of computers with an Ethernet cable and playing around with static IPs and file shares. It wasn't long before I started playing around with an old Lenovo ThinkCentre, and before I knew it, I had a homelab. I primarily used the ThinkCentre for attempted remote video rendering for my channel, so I found another PC for the homelab. An old Dell Dimension E521:
 
-![Image of Dell Dimension E521](../../assets/2026-02-21-Homelab-Updates/dell-dimension.jpg)
+![Image of Dell Dimension E521](../../assets/2026-02-21-Homelab-Updates/dell-dimension.jpg){:width="50%"}
 
-This sucker had one gigabyte of DDR2 memory, an old 160gb hard drive (replaced by a larger 1tb drive), and, most importantly, two cores at 2.0ghz, with 64-bit power from AMD. At this time, most of my old early-2000s-era machines that wouldn't run any modern 64-bit OSes, so having this Athlon 64 was important.
+This sucker had one gigabyte of DDR2 memory, an old 160gb hard drive (replaced by a larger 1tb drive), and, most importantly, two cores at 2.0ghz, with 64-bit power from AMD. At this time, most of my old early-2000s-era machines wouldn't run any modern 64-bit OSes, so having this Athlon 64 was important.
 
 I had started my deep dive into homelabs with plain old Windows Media Player. With some experimentation, I had learned that I could share my video library over DLNA with the built-in video player. Many early 2010s smart TVs and Blu-ray players could detect these servers, so I had discovered my very first implementation of a self-hosted video platform! So here I am with this old Dell running Windows 7, ripping DVDs with Handbrake, and watching them on TVs and computers throughout the house.
 
 Eventually, I want to add more features, such as better organization and auto album covers. What do I discover? Plex? Jellyfin? No, something called Mezzmo. This was a Windows-based media streamer freemium software that outshone the built-in Windows Media Player. I recall being able to get metadata downloads and automatic organization. The biggest addition of it all was that it included a web interface.
 
-I ran some other programs like XAMPP, built my first self-hosted website, and did a few other things. Later, I tried Plex, but did not like the half-cloud model of it (and have since never used it). I wanted to use Jellyfin, but did not meet the minimum requirements when using the Windows version. This pushed me to make the big switch. Around 2020, I installed a headless Ubuntu server 18.04. (Actually, it was like 12.04 cause of some issue, then I updated to 16.04, then to 18.04, very convoluted).
+I ran some other programs like XAMPP, built my first self-hosted website, and did a few other things. Later, I tried Plex, but did not like the half-cloud model of it (and have since never used it). I wanted to use Jellyfin, but it did not meet the minimum requirements when using the Windows version. This pushed me to make the big switch. Around 2020, I installed a headless Ubuntu server 18.04. (Actually, it was like 12.04 cause of some issue, then I updated to 16.04, then to 18.04, very convoluted).
 
-I learned many of my current Linux skills on that very machine, but running somethig so low spec could not last for long. I am actually impressed with how much I had running on that computer from 2007. Many slow response times and a hard drive failure later, I upgraded.
+I learned many of my current Linux skills on that very machine, but running something so low spec could not last for long. I am actually impressed with how much I had running on that computer from 2007. Many slow response times and a hard drive failure later, I upgraded.
 
-![Image of Dell Optiplex 7010](../../assets/2026-02-21-Homelab-Updates/dell-optiplex.jpg)
+![Image of Dell Optiplex 7010](../../assets/2026-02-21-Homelab-Updates/dell-optiplex.jpg){:width="50%"}
 
- In the spring of 2021, I got this off of eBay. A Dell Optiplex 7010. This had a quad-core hyper-threaded i7-3700 and 16gb of DDR3, the most of any computer in our house so far, surprisingly. Along with it, I obtained another 1TB drive, and I had decided to upgrade to a Crucial SSD for the boot drive (eventually replaced with the Samsung from the old SSD video!). Unfortunately, that one-terabyte drive had no redundancy, nor did the boot drive. But hey, at least theres a huge performance increase! 😬
+ In the spring of 2021, I got this off of eBay. A Dell Optiplex 7010. This had a quad-core hyper-threaded i7-3700 and 16gb of DDR3, the most of any computer in our house so far, surprisingly. Along with it, I obtained another 1TB drive, and I had decided to upgrade to a Crucial SSD for the boot drive (eventually replaced with the Samsung from the old SSD video!). Unfortunately, that one-terabyte drive had no redundancy, nor did the boot drive. But hey, at least there's a huge performance increase! 😬
 
 Regardless of safety measures, this machine worked faithfully for years. In that time, I moved from bare metal Ubuntu Server to Proxmox, installed dozens of different Dockerized apps, but barely performed any hardware updates. 
 
@@ -49,13 +49,13 @@ Just a few of the notable things I learned/changed during this time include:
 
 ## Today
 
-In the summer after finishing school, I decided to get myself a little graduation gift. Rather than fully focusing on classes that year (senioritis), I had kept my eye on a line of HP Z series workstations. I was certain that one of these was the primary candidate for hosting all my fun things. While I had also looked at tower-sized PowerEdge systems and Lenovo workstations, I kept a few things in mind throughout my search. 
+In the summer after finishing school, I decided to get myself a little graduation gift. Rather than fully focusing on classes that year (senioritis), I kept my eye on a line of HP Z series workstations. I was certain that one of these was the primary candidate for hosting all my fun things. While I had also looked at tower-sized PowerEdge systems and Lenovo workstations, I kept a few things in mind throughout my search. 
 
 Firstly, these would need to be a desktop tower size in order to fit into the corner where my current machine is, and also to support my second requirement: noise. I needed this machine to be as quiet as possible, as it is in our family room, and the family in that room wouldn't appreciate the whine of fans. Fanless is too expensive & often has underpowered hardware, so quiet fans are just fine, making a desktop is perfect in this case. The server would need lots of drives or availability for them, so a motherboard or HBA with lots of SATA or SCSI ports and a case with a ton of 3.5" bays.
 
 I was not sure which of these workstations had a bearable noise level, not to mention lower power usage. I had resorted to watching YouTube videos of BIOS configurations and such to get an idea of the loudness. Eventually, I gave up on this and decided my solution would be to go with a custom build. This brings me to what I have today!
 
-![Image of Custom Built Homelab Server](../../assets/2026-02-21-Homelab-Updates/current-server.jpg)
+![Image of Custom Built Homelab Server](../../assets/2026-02-21-Homelab-Updates/current-server.jpg){:width="75%"}
 
 - Motherboard: Asus Prime B550-Plus
 - CPU: Ryzen 9 5900x
@@ -67,17 +67,17 @@ I was not sure which of these workstations had a bearable noise level, not to me
   - 2x HGST WD Ultrastar HUH721212ALE601 12tb (Large storage, RAID 1)
 - Case: Fractal Design Define R4 ATX Mid Tower Case
 - PSU: Some EVGA 450 B1 450 W I found in my closet
-- CPU Fan: Cooler Master Hyper 212 RGB Black Edition, I also found in my closet
+- CPU Fan: Cooler Master Hyper 212 RGB Black Edition, I also found it in my closet
 
-Starting with the motherboard, I chose Asus because I have had good experience with previous builds. Also, a used B550 motherboard supports unbuffered ECC memory and has a half-dozen sata ports. My other requirements for a motherboard included ability for PCIe expansion, some NVMe slots for my boot drive, and hardware RAID support, though I knew I was going to use ZFS through Proxmox.
+Starting with the motherboard, I chose Asus because I have had a good experience with previous builds. Also, a used B550 motherboard supports unbuffered ECC memory and has a half-dozen SATA ports. My other requirements for a motherboard included the ability for PCIe expansion, some NVMe slots for my boot drive, and hardware RAID support, though I knew I was going to use ZFS through Proxmox.
 
 The CPU is a solid performer without breaking the bank, especially on the used market. I wanted plenty of cores for virtualization and a fast single-core speed for those various single-threaded programs. Additionally, though this thing does kick out a lot of heat, I knew it did better than Intel (in most cases). This also allowed me to use my old CPU cooler from my main PC, a Cooler Master Hyper 212, even though the RGB wasn't necessary. Many warned against this cooler, stating that it would not be enough for this 12-core CPU. However, I previously used the Hyper 212 with my 10700k, which worked great, even while there were many more complaints about it! And guess what? It has worked just fine on the server.
 
 The memory was an interesting pick. I found some decently rare, unbuffered ECC memory. This can be used in desktop boards as long as they support ECC. Fortunately for me, many of AMD’s modern chipsets allow for this configuration. I found two 32gb Samsung sticks on eBay for a pretty steal of a price, and since I have been looking for a matching pair that won't bankrupt me (RIP with ram prices now). This gives me a nice 64gb of ECC DDR4 to work with (though 2666 MHz, oh well). The ECC could come in handy for using ZFS to make redundant arrays.
 
-Speaking of disks, my big, primary storage are two HGST/WD 12tb drives put into a RAID 1 array. Though I plan to add more eventually and get a WD Purple disk strictly for surveillance, I hit a roadblock. The B500-Plus has 6 sata ports, as I mentioned earlier, two of those are disabled while using the PCIe lanes for NVMe storage. So I am down to 4 with my two RAID 1 boot SSDs. If I ever plan to upgrade, I suppose I must find an HBA. For now, alongside the 12tb storage disks, I have two 1tb Micron SATA SSDs in a, you guessed it, RAID 1 array. Yes, I promise I know other configurations exist, but budget just limits me, and I wanted SSD storage. For now, I call the SSD storage Fast1, and the HDD Storage12, while the boot drive I usually name ssdstorage in my VMs.
+Speaking of disks, my big, primary storage is two HGST/WD 12tb drives put into a RAID 1 array. Though I plan to add more eventually and get a WD Purple disk strictly for surveillance, I hit a roadblock. The B500-Plus has 6 sata ports, as I mentioned earlier, two of those are disabled while using the PCIe lanes for NVMe storage. So I am down to 4 with my two RAID 1 boot SSDs. If I ever plan to upgrade, I suppose I must find an HBA. For now, alongside the 12tb storage disks, I have two 1tb Micron SATA SSDs in a, you guessed it, RAID 1 array. Yes, I promise I know other configurations exist, but the budget just limits me, and I wanted SSD storage. For now, I call the SSD storage Fast1, and the HDD Storage12, while the boot drive I usually name ssdstorage in my VMs.
 
-Last interesting thing here, the case! This thing is pretty awesome, but not too flashy. Fractal Design made this in the early 2010s, and it shows with the front hot swaps and swinging panel. I chose this as it has plenty of drive bays, lots of room for cable management, and good soundproofing. Not to mention I copped it for something like 40 bucks. Other than that, the PSU is nothing special (and it probably should be) while the GPU is there because of the lack of onboard graphics.
+Last interesting thing here, the case! This thing is pretty awesome, but not too flashy. Fractal Design made this in the early 2010s, and it shows with the front hot swaps and swinging panel. I chose this as it has plenty of drive bays, lots of room for cable management, and good soundproofing. Not to mention, I copped it for something like 40 bucks. Other than that, the PSU is nothing special (and it probably should be) while the GPU is there because of the lack of onboard graphics.
 
 # The network
 Even if the server is the heart of my homelab, the network has to be my favorite. Coming a long way from a single ISP modem/router, I now have a diverse yet compact home network.
@@ -86,11 +86,11 @@ Even if the server is the heart of my homelab, the network has to be my favorite
 
 Let's start from the "demarc" where Xfinity provides a coaxial connection to the internet. This comes into the laundry room, where the heart of the network is, mounted on the wall here. I have a Netgear CM700 Modem, giving me an Ethernet WAN connection. Xfinity provides  400mbps down and around 40mbps up, which is actually leagues better than previous years. Around the start of my homelab, we only had 5mbps for uploads, which brought hosting services to the stone age when it came to external connections.
 
-~~This connection comes into my main firewall/router a Netgear R6400v2 running Fresh Tomato. Apart from being the NAT point for my connection, this also serves IP addresses, DNS, and forwards traffic. This is the basic home router you would probably think of and I am planning to upgrade to a PFsense box at some point or another. For now it has worked great and has over a year of uptime.~~
+~~This connection comes into my main firewall/router, a Netgear R6400v2 running Fresh Tomato. Apart from being the NAT point for my connection, this also serves IP addresses, DNS, and forwards traffic. This is the basic home router you would probably think of, and I am planning to upgrade to a pfSense box at some point or another. For now, it has worked great and has over a year of uptime.~~
 
-~~Next I have a couple of switches also by Netgear. It's here I want to point out that I am not intentionally a huge fan of Netgear, yet their products fit my needs nicely. These switches and routers can be configured from simple web UIs when I do not feel like using a CLI and they're rather inexpensive. Netgear provides "advanced technology" at least compared to the modern home network equipment, such as POE, VLANs, STP, you name it. As for products like Ubiquiti, they're expensive and are amazing in their ecosystem, but are very sought after and pricy even in the used market.~~
+~~Next, I have a couple of switches also by Netgear. It's here I want to point out that I am not intentionally a huge fan of Netgear, yet their products fit my needs nicely. These switches and routers can be configured from simple web UIs when I do not feel like using a CLI, and they're rather inexpensive. Netgear provides "advanced technology" at least compared to the modern home network equipment, such as POE, VLANs, STP, you name it. As for products like Ubiquiti, they're expensive and are amazing in their ecosystem, but are very sought after and pricy even in the used market.~~
 
-~~Anyway, back to the network setup. One switch is the primary one, a JGS524PE which provides gig connections around the house and POE to my cameras and APs. The other is a GS108 which is a simple gig switch that connects devices in the office/family room including the server. I have a third small POE switch in the garage that looks like the GS108 for cameras, but I have not used it yet. ~~
+~~Anyway, back to the network setup. One switch is the primary one, a JGS524PE, which provides gigabit connections around the house and POE to my cameras and APs. The other is a GS108, which is a simple gig switch that connects devices in the office/family room, including the server. I have a third small POE switch in the garage that looks like the GS108 for cameras, but I have not used it yet. ~~
 
 UPDATE:
 As I was writing this, I made some big changes to my main network devices: I got a new primary switch and switched to using OPNsense on a mini PC. This started as my old Netgear JGS524PE had died after a reboot and a factory reset, [which seemed to have occurred for many others](https://community.netgear.com/discussions/business-smart-plus-click-switches/jgs525pe-all-amber-led-on/1171839). I used a simple, 8-port, Netgear PoE switch as a stand-in as I searched for a replacement. I will document this process of finding a replacement and my new setup in a future blog post!
@@ -103,10 +103,10 @@ For Wireless we have two Ruckus R710 access points at different ends of the hous
  
 
 # The software
-Lastly, we come to what I run on my lab 24/7. Here is a basic diagram of the software running on my server. Everything is solely on this single machine (apart from a second homelab in a lake house, but maybe that's for another post!). I run good old Proxmox on my server with ZFS pools for storage. I have 4 VMs you can see in the diagram below:
+Lastly, we come to what I run in my lab 24/7. Here is a basic diagram of the software running on my server. Everything is solely on this single machine (apart from a second homelab in a lake house, but maybe that's for another post!). I run good old Proxmox on my server with ZFS pools for storage. I have 4 VMs you can see in the diagram below:
 
-Hmm well this is embarrasing, I will add the digram soon... hopefully
-If it's like months later and I haven't please reach out to me. I wanted to get this published, and thought a diagram can be a later project.
+Hmm, well this is embarrassing, I will add the diagram soon... hopefully
+If it's like months later and I haven't, please reach out to me. I wanted to get this published, and thought a diagram can be a later project.
 
 ## Ubuntu Container Server
 The first VM is the most important. This Ubuntu instance is the heart of my services, with 58 different Docker containers actively running. I like Dockerizing my applications to allow for different dependencies not to affect each other. It also allows for the separation of networks and volumes between the services. 
