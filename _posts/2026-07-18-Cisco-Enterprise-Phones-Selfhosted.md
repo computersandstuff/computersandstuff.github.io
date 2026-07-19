@@ -395,14 +395,17 @@ exten => _[0-35-9]X.,1,NoOp(Catch-all routing out to VoIP.ms for: ${EXTEN})
 File listing
 TFTPROOT/Desktops/800x480x24
 * List.xml
-	* ``` 
+* mainbackground.png
+* clearbackground.png
+
+List.xml content:
+``` 
 <CiscoIPPhoneImageList>
     <ImageItem Image="TFTP:Desktops/800x480x24/mainbackground.png" URL="TFTP:Desktops/800x480x24/mainbackground.png"/>
     <ImageItem Image="TFTP:Desktops/800x480x24/clearbackground.png" URL="TFTP:Desktops/800x480x24/clearbackground.png"/>
-</CiscoIPPhoneImageList>``` 
+</CiscoIPPhoneImageList>
+``` 
 
-* mainbackground.png
-* clearbackground.png
 
 # Lessons Learned
 ### 1.  Asymmetric Video Profile Issue
